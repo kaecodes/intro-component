@@ -94,10 +94,11 @@ form input::placeholder {
 .email-address,
 .pass {
   display: flex;
+  flex-direction: column;
   justify-content: end;
   align-items: center;
-  position: relative;
-  margin-bottom: 1rem;
+  position: relative; 
+  margin: 1rem; 
 }
 
 .first img,
@@ -107,6 +108,14 @@ form input::placeholder {
   display: none;
   position: absolute;
   right: 1rem;
+}
+
+.error-msg {
+  font-size: 0.6rem; 
+  margin-top: 0.3rem;
+  margin-left: auto;
+  font-style: italic;
+  color: var(--red); 
 }
 
 #free-trial {
@@ -121,7 +130,7 @@ form input::placeholder {
   box-shadow: 0 3px 0 hsl(154, 68%, 40%);
 }
 
-.trial p {
+.tos {
   font-size: 0.7rem;
   text-align: center;
   padding: 1rem;
