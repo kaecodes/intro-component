@@ -20,19 +20,23 @@
       </div>
       <form action="/" class="trial">
         <div class="first">
-          <input type="text" id="fname" placeholder="First Name"><img class="error" src="images/icon-error.svg" alt="">
+          <input type="text" id="fname" placeholder="First Name"><img class="error-icon" src="images/icon-error.svg" alt="">
+          <p class="error-msg">First Name cannot be empty</p>
         </div>
         <div class="last">
-          <input type="text" id="lname" placeholder="Last Name"><img class="error" src="images/icon-error.svg" alt="">
+          <input type="text" id="lname" placeholder="Last Name"><img class="error-icon" src="images/icon-error.svg" alt="">
+          <p class="error-msg">Last Name cannot be empty</p>
         </div>
         <div class="email-address">
-          <input type="email" id="email" placeholder="Email Address"><img class="error" src="images/icon-error.svg" alt="">
+          <input type="email" id="email" placeholder="Email Address"><img class="error-icon" src="images/icon-error.svg" alt="">
+          <p class="error-msg">Looks like this is not an email</p>
         </div>
         <div class="pass">
-          <input type="password" id="password" placeholder="Password"><img class="error" src="images/icon-error.svg" alt="">
+          <input type="password" id="password" placeholder="Password"><img class="error-icon" src="images/icon-error.svg" alt="">
+          <p class="error-msg">Password cannot be empty</p>
         </div>
         <button type="submit" id="free-trial">Claim your free trial </button>
-        <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+        <p class="tos">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
     </div>
   </main>
