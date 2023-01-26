@@ -19,10 +19,18 @@
         <button><span>Try it free 7 days</span> then $20/mo. thereafter</button>
       </div>
       <form action="/" class="trial">
-        <input type="text" id="fname" placeholder="First Name">
-        <input type="text" id="lname" placeholder="Last Name">
-        <input type="email" id="email" placeholder="Email Address">
-        <input type="password" id="password" placeholder="Password">
+        <div class="first">
+          <input type="text" id="fname" placeholder="First Name"><img class="error" src="images/icon-error.svg" alt="">
+        </div>
+        <div class="last">
+          <input type="text" id="lname" placeholder="Last Name"><img class="error" src="images/icon-error.svg" alt="">
+        </div>
+        <div class="email-address">
+          <input type="email" id="email" placeholder="Email Address"><img class="error" src="images/icon-error.svg" alt="">
+        </div>
+        <div class="pass">
+          <input type="password" id="password" placeholder="Password"><img class="error" src="images/icon-error.svg" alt="">
+        </div>
         <button type="submit" id="free-trial">Claim your free trial </button>
         <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
