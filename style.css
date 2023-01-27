@@ -149,3 +149,67 @@ form input::placeholder {
   text-decoration: none;
   color: var(--red);
 }
+
+/* Media Queries */
+
+@media (min-width: 481px) {
+  body {
+    background: url('./images/bg-intro-mobile.png')center;
+    background-color: var(--red);
+  }
+
+  main {
+    width: 500px; 
+  }
+}
+
+@media (min-width: 1024px) {
+
+  body {
+    background: url('./images/bg-intro-desktop.png');
+    background-color: var(--red);
+  }
+
+  main {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: auto; 
+  }
+
+  .intro {
+    width: 50%;
+    text-align: left;
+  }
+
+  .intro h1 {
+    width: 90%;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  .intro p {
+    width: 90%;
+  }
+
+  .try-btn button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 80%;
+  }
+
+  .intro h1 {
+    width: 80%; 
+    font-size: 3rem;
+  }
+}
